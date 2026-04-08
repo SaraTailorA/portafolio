@@ -12,28 +12,68 @@
         Sara Carolina Tailor Acosta    
         </h1>
         <nav>
-            <section>
             <ul> 
                 <li><a href="#aboutme"> About Me </a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects"> Projects </a></li>
+                <li><a href="mascotas.html" target="_blank">My Pets</a></li>
                 <li><a href="#contactme"> Contact Me </a></li>
             </ul>
-            </section>
         </nav>
     </header>
 
     <section id ="aboutme"> 
     <h2>About Me</h2>
-    <p>I am a Business Administration Professional with a background in AI training, data annotation, and customer support. I thrive at the intersection of business logic and emerging technology.</p>
-    <p>🔭 Currently Working: I am an AI Trainer at Outlier. It’s fascinating to see how these models function and how rapidly they are evolving.</p>
-    <p>🌱 Currently Learning: I’m diving into the world of programming, dedicating time each day to mastering logic and Python, one of the world's most versatile languages.</p>
+    <p>I’m a Business Administration professional with hands-on experience in AI training, data annotation, and operations support, combining analytical skills with strong attention to detail and a strong interest in emerging technology.</p>
+    <p>I’ve worked as an AI Trainer and Data Annotator on platforms such as Outlier and Scale AI, where I evaluated and improved AI-generated text, images, and videos by following detailed guidelines and applying consistent quality rubrics. My focus has been on accuracy, relevance, compliance, and providing clear reviewer feedback to support model improvement.</p>
+    <p>In addition, I bring experience in business operations and financial support, using advanced Excel and Microsoft Dynamics 365 to analyze data, track KPIs, build reports, and support data-driven decision-making. I’m detail-oriented, adaptable, and comfortable working in structured, guideline-driven environments.</p>
+    <p>Currently, I work as an AI Trainer at Outlier, and I’m also learning programming—building my logic skills and studying Python daily. I’m interested in opportunities in AI training, data annotation, operations analysis, or entry-level data/analytics roles where I can keep learning while delivering high-quality results.</p>
+    <p>Let’s connect!</p>
+    </section>
+
+    <section id="experience"> 
+        <h2>Experience</h2>
+        <h4>Outlier: AI Trainer / Data Annotator</h4>
+        <p class="job-date">May 2025 - Present | Remote</p>
+        <ul> 
+            <li>Annotate and evaluate AI-generated text, images, and videos using detailed written guidelines and scoring rubrics.</li>
+            <li>Review model responses for accuracy, relevance, safety, tone, and policy compliance.</li>
+            <li>Provide concise reviewer feedback to improve AI model performance and training data quality.</li>
+            <li>Maintain high accuracy, consistency, and throughput across multiple AI training projects.</li>
+            <li>Adapt quickly to updated instructions and evolving annotation standards.</li>
+        </ul>
+        <h4>Teleperformance: Operations & Administrative Support</h4>
+        <p class="job-date">Jan 2023 - Apr 2025 | Remote</p>
+        <ul> 
+            <li>Managed account updates, license activations, profile management, and system records.</li>
+            <li>Processed cancellations, refunds, invoices, and financial transactions in compliance with policies.</li>
+            <li>Created and maintained Excel spreadsheets for tracking service requests, costs, and performance metrics.</li>
+            <li>Built reports and Power BI dashboards to support operational and financial decision-making.</li>
+            <li>Utilized Microsoft Dynamics 365 for case management, reporting, and data accuracy.</li>
+            <li>Collaborated with cross-functional teams to resolve technical, financial, and administrative issues.</li>
+        </ul>
+        <h4>Majorel Colombia - Entry Level Case Manager</h4>
+        <p class="job-date">Jan 2022 - Nov 2022 | Hybrid</p>
+        <ul> 
+            <li>Resolved billing, payment, and account-related cases following financial and compliance guidelines.</li>
+            <li>Reviewed disputes, refunds, and payment discrepancies with high accuracy.</li>
+            <li>Maintained KPIs by resolving high-volume cases efficiently and within service-level targets.</li>
+            <li>Analyzed recurring issues and escalated insights to improve processes.</li>
+        </ul>
+         <h4>Red Motors - Administrative Assistant</h4>
+        <p class="job-date">Jan 2019 - Jan 2020 | On site</p>
+        <ul> 
+            <li>Managed accounts payable and receivable, invoicing, and transaction reconciliation.</li>
+            <li>Assisted with budget tracking, expense reporting, and cash flow support.</li>
+            <li>Provided administrative and customer support related to financial operations.</li>
+        </ul>
     </section>
 
     <section id="projects"> 
         <h2>Projects</h2>
             <p>Since I started studying at Riwi, I have been working on these practice projects with Python and HTML. </p>
         <ul> 
-            <li><a href="mascotas.html" target="_blank"> Pets </a></li>
+            <li><a href="mascotas.html" target="_blank"> My Pets </a></li>
             <li><a href="https://github.com/SaraTailorA/final_test" target="_blank"> Students Registration System </a></li>
             <li><a href="https://github.com/SaraTailorA/RegistroDeInventario" target="_blank"> Inventory Management System </a></li>
         </ul>
@@ -43,18 +83,26 @@
         <h2>Contact Me</h2>
             <p>If you want further information or any suggestion, please do not hesitate to fill out the form below, I will more than happy to answer you.</p>
     <form>
-        <label>Name:</label>
-        <input type="text" placeholder="Type your name..."><br>
-        <label>Email:</label>
-        <input type="email" placeholder="Type your email..."><br>
-        <label>Phone Number:</label>
-        <input type="number" placeholder="Type your phone number..."><br>
-        <label>Message:</label>
-        <textarea rows="5"></textarea>
-        <button type="submit">Summit</button>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Type your name...">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Type your email...">
+
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" placeholder="Type your phone number...">
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5"></textarea>
+
+        <button type="submit">Submit</button>
         
     </form>
 
     </section>
+    
+    <footer>
+        <p>© 2026 Sara Carolina Tailor Acosta. All rights reserved.</p>
+    </footer>
 </body>
 </html>
