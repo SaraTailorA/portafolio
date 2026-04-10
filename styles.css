@@ -11,19 +11,19 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0; /* Cambiamos a 0 para que el header ocupe todo el ancho */
-    background-color: #F0F4F8; /* Gris azulado suave, más profesional que #f9f9f9 */
-    color: #334155; /* Color de texto base: gris oscuro elegante */
+    background-color: #F0F4F8; 
+    color: #334155; 
 }
 
 h1 {
-    color: #1E293B; /* Azul muy oscuro, casi negro: elegante */
+    color: #1E293B; 
     text-align: center;
     margin: 0;
     padding: 20px 0;
 }
 
 h2 {
-    color: #0F766E; /* Verde azulado (teal) profesional */
+    color: #0F766E; 
     border-bottom: 2px solid #0F766E;
     padding-bottom: 8px;
 }
@@ -34,18 +34,18 @@ h3 {
 }
 
 p {
-    color: #475569; /* Gris medio: legible y no tan intenso */
+    color: #475569;
 }
 
 header {
-    background-color: #1E293B; /* Fondo oscuro para el header */
+    background-color: #1E293B; 
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 0 0 12px 12px; /* Solo esquinas inferiores redondeadas */
 }
 
 header h1 {
-    color: #F8FAFC; /* Texto blanco sobre fondo oscuro */
+    color: #F8FAFC; 
 }
 
 nav ul {
@@ -59,23 +59,23 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #5EEAD4; /* Verde agua claro: contrasta bien con fondo oscuro */
+    color: #5EEAD4; 
     font-weight: 600;
     padding: 5px 10px;
     border-radius: 5px;
-    transition: all 0.3s ease; /* Transición suave en hover */
+    transition: all 0.3s ease;
 }
 
 /* Efecto Hover en enlaces del menú */
 nav a:hover {
-    color: #F0FDFA; /* Casi blanco */
-    background-color: #0F766E; /* Fondo teal al hacer hover */
+    color: #F0FDFA; 
+    background-color: #0F766E; 
     text-decoration: none;
 }
 
 section {
     margin: 0 auto 30px auto; /* Centrado horizontal con margen inferior */
-    max-width: 900px; /* Ancho máximo para mejor lectura */
+    max-width: 900px; 
     padding: 25px 30px;
     background: #FFFFFF;
     border-radius: 12px;
