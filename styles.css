@@ -1,16 +1,8 @@
-
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
 body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0; /* Cambiamos a 0 para que el header ocupe todo el ancho */
+    padding: 0; 
     background-color: #F0F4F8; 
     color: #334155; 
 }
@@ -46,7 +38,8 @@ header {
     align-items: center;
     justify-content: space-around;
     position:sticky;
-    top:0
+    top:0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -71,7 +64,6 @@ nav a {
     transition: all 0.3s ease;
 }
 
-/* Efecto Hover en enlaces del menú */
 nav a:hover {
     color: #F0FDFA; 
     background-color: #0F766E; 
@@ -79,13 +71,13 @@ nav a:hover {
 }
 
 section {
-    margin: 0 auto 30px auto; /* Centrado horizontal con margen inferior */
+    margin: 0 auto 30px auto; 
     max-width: 900px; 
     padding: 25px 30px;
     background: #FFFFFF;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra más profesional */
-    border-left: 4px solid #0F766E; /* Línea lateral decorativa */
+    box-shadow: 0 4px 15px #00000014;
+    border-left: 4px solid #0F766E; 
 }
 
 #projects ul {
@@ -101,7 +93,7 @@ section a {
 }
 
 section a:hover {
-    color: #134E4A; /* Versión más oscura del teal */
+    color: #134E4A; 
     text-decoration: underline;
 }
 
@@ -115,10 +107,10 @@ section ul li {
 
 
 .gallery {
-    display: flex;          /* Activa flexbox en el contenedor */
-    flex-wrap: nowrap;        /* Permite que las tarjetas salten de línea si no caben */
-    justify-content: center; /* Centra las tarjetas horizontalmente */
-    gap: 20px;              /* Espacio entre cada tarjeta */
+    display: flex;      
+    flex-wrap: nowrap;       
+    justify-content: center; 
+    gap: 20px;           
     border-left: 4px solid #0F766E;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -136,10 +128,10 @@ h2 {
     transition: transform 0.2s ease;
 }
 
-/* Efecto hover en tarjetas de mascotas (opcional pero bonito) */
+
 .pet-card:hover {
-    transform: translateY(-3px); /* Se "eleva" ligeramente */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 20px #0000001F;
 }
 
 .pet-card img {
@@ -148,7 +140,7 @@ h2 {
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más definida */
+    box-shadow: 0 4px 12px #00000026;
     display: block;
     margin: 10px auto 15px auto;
 }
@@ -169,24 +161,24 @@ input, textarea {
     margin-bottom: 15px;
     padding: 10px 12px;
     border-radius: 8px;
-    border: 1px solid #CBD5E1; /* Borde gris medio */
+    border: 1px solid #CBD5E1; 
     font-family: inherit;
     font-size: 14px;
     transition: border-color 0.3s ease;
 }
 
-/* Efecto cuando el usuario hace clic en un campo */
+
 input:focus, textarea:focus {
     outline: none;
-    border-color: #0F766E; /* Borde teal al enfocar */
-    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15); /* Resplandor suave */
+    border-color: #0F766E; 
+    box-shadow: 0 0 0 3px  #0F766E26; 
 }
 
 button {
     padding: 12px;
     border-radius: 8px;
     border: none;
-    background-color: #0F766E; /* Teal profesional */
+    background-color: #0F766E; 
     color: #FFFFFF;
     font-weight: 600;
     font-size: 15px;
@@ -195,7 +187,7 @@ button {
 }
 
 button:hover {
-    background-color: #134E4A; /* Teal más oscuro en hover */
+    background-color: #134E4A; 
 }
 
 footer {
@@ -207,7 +199,7 @@ footer {
 }
 
 footer p {
-    color: #94A3B8; /* Gris claro sobre fondo oscuro */
+    color: #94A3B8; 
     margin: 0;
 }
 
@@ -223,13 +215,13 @@ footer a:hover {
 }
 
 .job-date {
-    color: #94A3B8;          /* Gris claro */
+    color: #94A3B8;         
     font-size: 14px;
     font-style: italic;
-    margin: 2px 0 10px 0;   /* Poco espacio arriba, más abajo */
+    margin: 2px 0 10px 0;   
 }
-/* Títulos de puestos de trabajo */
+
 section h4 {
     color: #0F766E;
-    margin-bottom: 2px;      /* Reduce espacio entre título y fecha */
+    margin-bottom: 2px;      
 }
