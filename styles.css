@@ -41,7 +41,10 @@ header {
     background-color: #1E293B; 
     padding: 20px;
     margin-bottom: 30px;
-    border-radius: 0 0 12px 12px; /* Solo esquinas inferiores redondeadas */
+    border-radius: 0 0 12px 12px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
     position:sticky;
     top:0
 }
@@ -85,6 +88,11 @@ section {
     border-left: 4px solid #0F766E; /* Línea lateral decorativa */
 }
 
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
 section a {
     color: #0F766E;
     text-decoration: none;
@@ -112,6 +120,8 @@ section ul li {
     justify-content: center; /* Centra las tarjetas horizontalmente */
     gap: 20px;              /* Espacio entre cada tarjeta */
     border-left: 4px solid #0F766E;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 h2 {
@@ -136,6 +146,7 @@ h2 {
     width: 100%;
     max-width: 500px;
     height: auto;
+    aspect-ratio: 1/1;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más definida */
     display: block;
