@@ -46,10 +46,6 @@ toggleExperienceBtn.addEventListener("click", function () {
 });
 
 var toggleProjectsBtn = document.getElementById("toggle-projects-btn");
-var moreProjects = document.getElementById("more-projects");
-
-// --- 3b. Toggle additional projects ---
-var toggleProjectsBtn = document.getElementById("toggle-projects-btn");
 var extraProjects = document.querySelectorAll(".extra-project");
 
 toggleProjectsBtn.addEventListener("click", function () {
@@ -57,7 +53,7 @@ toggleProjectsBtn.addEventListener("click", function () {
     project.classList.toggle("hidden");
   });
 
-  if (toggleProjectsBtn.textContent === "View all projects") {
+  if (toggleProjectsBtn.textContent .trim() === "View all projects") {
     toggleProjectsBtn.textContent = "Show less";
   } else {
     toggleProjectsBtn.textContent = "View all projects";
