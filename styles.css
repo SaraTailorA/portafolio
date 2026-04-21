@@ -22,8 +22,8 @@
   --font-size-2xl: 2rem;
 
   --radius: 12px;
-  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  --shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.12);
+  --shadow: 0 4px 15px #00000014;
+  --shadow-hover: 0 6px 20px #0000001f;
   --transition: 0.3s ease;
 }
 
@@ -175,7 +175,7 @@ section h4 {
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: var(--radius);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px #00000026;
   display: block;
   margin: 0.625rem auto 0.9375rem auto;
 }
@@ -208,7 +208,7 @@ input:focus,
 textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+  box-shadow: 0 0 0 3px #0F766E26;
 }
 
 button[type="submit"] {

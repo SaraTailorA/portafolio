@@ -48,12 +48,18 @@ toggleExperienceBtn.addEventListener("click", function () {
 var toggleProjectsBtn = document.getElementById("toggle-projects-btn");
 var moreProjects = document.getElementById("more-projects");
 
+// --- 3b. Toggle additional projects ---
+var toggleProjectsBtn = document.getElementById("toggle-projects-btn");
+var extraProjects = document.querySelectorAll(".extra-project");
+
 toggleProjectsBtn.addEventListener("click", function () {
-  if (moreProjects.classList.contains("hidden")) {
-    moreProjects.classList.remove("hidden");
+  extraProjects.forEach(function (project) {
+    project.classList.toggle("hidden");
+  });
+
+  if (toggleProjectsBtn.textContent === "View all projects") {
     toggleProjectsBtn.textContent = "Show less";
   } else {
-    moreProjects.classList.add("hidden");
     toggleProjectsBtn.textContent = "View all projects";
   }
 });
