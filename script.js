@@ -34,17 +34,15 @@ const btnProjects = document.getElementById("toggle-projects-btn");
 const projects = document.querySelectorAll(".extra-project");
 
 btnProjects.addEventListener("click", function () {
-  projects.forEach(function (item) {
-    if (item.style.display === "list-item") {
-      item.style.display = "none";
-    } else {
-      item.style.display = "list-item";
-    }
-  });
-
   if (btnProjects.textContent === "View all projects") {
+    projects.forEach(function (item) {
+      item.style.display = "list-item";
+    });
     btnProjects.textContent = "Show less";
   } else {
+    projects.forEach(function (item) {
+      item.style.display = "none";
+    });
     btnProjects.textContent = "View all projects";
   }
 });
