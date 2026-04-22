@@ -1,61 +1,50 @@
+alert("Hi! Welcome to my portfolio. I hope you enjoy checking out my work.");
 
-window.addEventListener("load", function () {
-  var welcomeMsg = document.getElementById("welcome-msg");
+const btnDescription = document.getElementById("toggle-description-btn");
+const textDescription = document.getElementById("projects-description");
 
-  welcomeMsg.textContent = "Welcome to my portfolio. Thanks for visiting.";
-  welcomeMsg.style.display = "block";
-
-  setTimeout(function () {
-    welcomeMsg.style.display = "none";
-  }, 4000);
-});
-
-var toggleDescriptionBtn = document.getElementById("toggle-description-btn");
-var projectsDescription = document.getElementById("projects-description");
-
-var originalText =
-  "Since I started studying at Riwi, I have been working on these practice projects:";
-var detailedText =
-  "In these projects, I've used different programming languages that I've been learning at Riwi, such as Python, HTML, CSS, and JavaScript. These projects have helped me develop my logic and web application design skills.";
-
-var showingOriginal = true;
-
-toggleDescriptionBtn.addEventListener("click", function () {
-  if (showingOriginal) {
-    projectsDescription.textContent = detailedText;
-    toggleDescriptionBtn.textContent = "Show short description";
-    showingOriginal = false;
+btnDescription.addEventListener("click", function () {
+  if (btnDescription.textContent === "Learn more about these projects") {
+    textDescription.textContent =
+      "In these projects, I've used different programming languages that I've been learning at Riwi, such as Python, HTML, CSS, and JavaScript. These projects have helped me develop my logic and web application design skills.";
+    btnDescription.textContent = "Show less";
   } else {
-    projectsDescription.textContent = originalText;
-    toggleDescriptionBtn.textContent = "Learn more about these projects";
-    showingOriginal = true;
+    textDescription.textContent =
+      "Since I started studying at Riwi, I have been working on these practice projects:";
+    btnDescription.textContent = "Learn more about these projects";
   }
 });
 
-var toggleExperienceBtn = document.getElementById("toggle-experience-btn");
-var previousExperience = document.getElementById("previous-experience");
 
-toggleExperienceBtn.addEventListener("click", function () {
-  if (previousExperience.classList.contains("hidden")) {
-    previousExperience.classList.remove("hidden");
-    toggleExperienceBtn.textContent = "Show less";
+const btnExperience = document.getElementById("toggle-experience-btn");
+const experience = document.getElementById("previous-experience");
+
+btnExperience.addEventListener("click", function () {
+  if (experience.style.display === "block") {
+    experience.style.display = "none";
+    btnExperience.textContent = "View previous experience";
   } else {
-    previousExperience.classList.add("hidden");
-    toggleExperienceBtn.textContent = "View previous experience";
+    experience.style.display = "block";
+    btnExperience.textContent = "Show less";
   }
 });
 
-var toggleProjectsBtn = document.getElementById("toggle-projects-btn");
-var extraProjects = document.querySelectorAll(".extra-project");
 
-toggleProjectsBtn.addEventListener("click", function () {
-  extraProjects.forEach(function (project) {
-    project.classList.toggle("hidden");
+const btnProjects = document.getElementById("toggle-projects-btn");
+const projects = document.querySelectorAll(".extra-project");
+
+btnProjects.addEventListener("click", function () {
+  projects.forEach(function (item) {
+    if (item.style.display === "list-item") {
+      item.style.display = "none";
+    } else {
+      item.style.display = "list-item";
+    }
   });
 
-  if (toggleProjectsBtn.textContent .trim() === "View all projects") {
-    toggleProjectsBtn.textContent = "Show less";
+  if (btnProjects.textContent === "View all projects") {
+    btnProjects.textContent = "Show less";
   } else {
-    toggleProjectsBtn.textContent = "View all projects";
+    btnProjects.textContent = "View all projects";
   }
 });
